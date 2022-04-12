@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Title -->
+    <title>BOND</title>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- First name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign up
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-muted">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSigninVerticalPassword">
+                    Enter your password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign in
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-muted">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-primary mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="./startup.html">
+          <h3 class="text-black text-uppercase fs-2 fw-bolder">B o n d</h3>
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+            </li>
+            <li class="nav-item dropdown">
+              
+                
+              </a>
+              <div class="" aria-labelledby="navbarPages">
+                <div class="row gx-0">
+                  <div class="col-6">
+                    <div class="row gx-0">
+                      <div class="col-12 col-lg-6">
+    
+                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+            <li class="">
+              <a class="text-black nav-link " id="navbarAccount"  href="#" aria-haspopup="true" aria-expanded="false">
+                
+              </a>
+              
+           <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./docs/index.html">
+    
+    
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-dark lift ms-auto" href="#!" target="_blank">
+            Coming Soon
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section class="py-8 py-md-11 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Preheader -->
+            <h6 class="text-uppercase fs-5 text-black" data-aos="fade-up">
+              Powering international companies and their founders on
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="heading display-1 fw-bold" data-aos="fade-up" data-aos-delay="50">
+              B O N D
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-6" data-aos="fade-up" data-aos-delay="100">
+              First of its kind borderless platform for the complex banking of startups & their founders.
+            </p>
+
+            <!-- Button -->
+            <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
+              <a class="btn btn-dark shadow lift" href="#!">
+                Coming Soon <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Video -->
+            <div class="ratio ratio-16x9">
+              <img class="" src="./assets/img/devices/bond-card.png" autoplay loop muted>
+                Sorry, your browser doesn't support embedded videos,
+                but don't worry, you can <a href="assets/video/video-1.mp4"></a>
+                and watch it with your favorite video player!
+            </img>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- STEPS -->
+    <div class="position-relative mt-n12 mt-md-n15">
+      <div class="shape shape-bottom shape-fluid-x text-black">
+        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- STEPS -->
+    <div class="section bg-black pt-12 pt-md-15 pb-8 pb-md-11">
+      <div class="container">
+        <div class="row justify-content-between align-items-center mb-5">
+          <div class="col-12 col-md-4 order-md-2 text-center">
+
+            <!-- Image -->
+                    
+          </div>
+          <div class="col-12 col-md-7 order-md-1">
+
+            <!-- Heading -->
+            <h2 class="text-white" style="max-width: 450px;">
+              We start with your needs & deliver a full banking solution.
+            </h2>
+
+            <!-- Text -->
+            <div class="lead text-muted-80 mb-0">
+             
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+
+                <!-- Step -->
+                <div class="row gx-0 align-items-center mb-md-5">
+                  <div class="col-auto">
+
+                    <!-- Number -->
+                    <a class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1" href="#!">
+                      <span>1</span>
+                    </a>
+
+                  </div>
+                  <div class="col">
+
+                    <!-- Divider -->
+                    <hr class="d-none d-md-block bg-gray-900-50 me-n7">
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ms-n5 ms-md-0">
+
+                <!-- Heading -->
+                <h3 class="text-white">
+                  Business accounts.
+                </h3>
+
+                <!-- Text -->
+                <p class="text-white mb-6 mb-md-0">
+                  Get a multi currency business account & debit card with global IBANs. Pay & recieve in local currency throughout the world, with zero F/X fees.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+
+                <!-- Step -->
+                <div class="row gx-0 align-items-center mb-md-5">
+                  <div class="col-auto">
+
+                    <!-- Number -->
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1">
+                      <span>2</span>
+                    </a>
+
+                  </div>
+                  <div class="col">
+
+                    <!-- Divider -->
+                    <hr class="d-none d-md-block bg-gray-900-50 me-n7">
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ms-n5 ms-md-0">
+
+                <!-- Heading -->
+                <h3 class="text-white">
+                  Treasury.
+                </h3>
+
+                <!-- Text -->
+                <p class="text-white mb-6 mb-md-0">
+                  Treasury analyses your finances & determines what cash should be put to work earning yield in ultra safe investment vehicles.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+
+                <!-- Step -->
+                <div class="row gx-0 align-items-center mb-md-5">
+                  <div class="col-auto">
+
+                    <!-- Number -->
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1">
+                      <span>3</span>
+                    </a>
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ms-n5 ms-md-0">
+
+                <!-- Heading -->
+                <h3 class="text-white">
+                  Corporate credit card.
+                </h3>
+
+                <!-- Text -->
+                <p class="text-white mb-0">
+                Highest lines of credit, uncapped cash back & no founder liability. Create & manage your teams cards all from your Bond business account.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container-->
+    </div>
+
+    <!-- STEPS -->
+    <div class="position-relative">
+      <div class="shape shape-top shape-fluid-x shape-flip-x text-black">
+        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-6 col-lg-5 order-md-2">
+
+            <!-- Image grid -->
+            <div class="d-flex flex-column w-md-130 mb-6 mb-md-0">
+              <!-- Image -->
+              <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-20" src="assets/img/screenshots/ui/analytics-2.png" alt="..." style="min-height: 1px; max-width: 50%; margin-left: 40%;">
+
+              <!-- Image -->
+              <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-50" src="assets/img/screenshots/ui/analytics-1.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -35%;">
+
+              <!-- Image -->
+              <img class=" img-fluid rounded shadow align-self-center" data-jarallax-element="-80" src="assets/img/screenshots/ui/analytics-3.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -20%;">
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1 pt-md-12">
+
+            <!-- Heading -->
+            <h1>
+            One partner for all your needs.
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700 mb-6">
+             We give companies & the innovators behind <br> them all the tools they need to grow. We <br> built today, so you can build tomorrow.
+            </p>
+
+            <!-- List -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    Business accounts
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <p class="text-success mb-lg-0">
+                   Treasury 
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <span class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    Corporate credit cards
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle bg-success-soft me-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success mb-0">
+                    Global payment rails
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-6 img-skewed img-skewed-end">
+
+            <!-- Code -->
+            <div class="card rounded-lg bg-black mb-6 mb-md-0 img-skewed-item screenshot">
+              <div class="card-header border-white-10">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ms-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ms-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+              </div>
+              <div class="card-body">
+
+                <!-- Code -->
+                <code class="highlight" data-typed='{"backSpeed":2, "strings": ["&gt;&nbsp;$&nbsp;npm&nbsp;install<br/><span class=\"text-success\">Everything&nbsp;is&nbsp;installed</span><br/><br/>&gt;&nbsp;$&nbsp;npm start<br/><span class=\"text-success\">scss&nbsp;watching</span><br/><span class=\"text-success\">LiveReload&nbsp;started</span><br/><span class=\"text-success\">Opening&nbsp;localhost:8080</span><br/><br/>&gt;&nbsp;$&nbsp;that&#x2019;s&nbsp;it<br/><span class=\"text-success\">Yup,&nbsp;that&#x2019;s&nbsp;it.</span>"]}' style="min-height: 183px;"></code>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-5">
+
+            <!-- Heading -->
+            <h2>
+            Banking for companies defining tomorrow.
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700">
+              Bond was forged around the idea that talent is spread out globally. By leveraging technology, Bond is democratising access to the tools needed to define tomorrow, no matter where you're in the world.
+            </p>
+
+            <!-- Link -->
+            <a class="fw-bold text-decoration-none" href="#!">
+             <!-- <i class="fe fe-arrow-right ms-3"></i> -->
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="border-top"> 
+      <div class="container">
+        <div class="row justify-content-between align-items-stretch">
+          <div class="col-12 col-md-6 py-8 py-md-13">
+
+            <!-- Heading -->
+            <h2>
+              Physical & virtual corporate credit cards. 
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700 mb-7">
+             Get the corporate credit card that shows you're building tomorrow, today. 
+            </p>
+
+            <!-- Button -->
+            <a class="text-reset d-inline-block me-1" href="#!">
+              <img src="assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+            </a>
+
+            <!-- Button -->
+            <a class="text-reset d-inline-block" href="#!">
+              <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
+            </a>
+
+          </div>
+          <div class="col-12 col-md-5">
+
+            <!-- Image -->
+            <div class="position-relative h-100 vw-50 bg-cover" style="background-image: url(assets/img/covers/cover-18.jpg);">
+
+              <!-- Shape -->
+              <div class="shape shape-start shape-fluid-y text-white">
+                <svg viewBox="0 0 100 1544" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h100v386l-50 772v386H0V0z" fill="currentColor"/></svg>              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- INTEGRATIONS -->
+    <section class="footer-bg py-8 py-md-13">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase fs-4 text-warning">Integrations</h6>
+
+            <!-- Heading -->
+            <h1 class="fw-bold text-white">
+              Sync with your existing software.
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-9">
+              Streamlining your operations has never been easier.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              <svg enable-background="new 0 0 2500 2500" viewBox="0 0 2500 2500" xmlns="http://www.w3.org/2000/svg"><circle cx="1250" cy="1250" fill="#2ca01c" r="1250"/><path d="m301.3 1249.6c.1 282.6 228 512.4 510.6 514.9h72.3v-188.9h-72.3c-175.2 47.8-355.9-55.5-403.6-230.7-.4-1.4-.7-2.8-1.1-4.2-49.1-177.5 53.7-361.4 230.6-412.5h36.1c45.3-9.9 92.2-9.9 137.5 0h175.6v1002.9c-.9 106.1 84.4 192.9 190.5 193.9v-1395.4h-364.5c-284.6 1.5-514 233.4-512.5 518v.1zm1387.5-519.8h-72.3v198.9h72.3c174.8-47.7 355.1 55.3 402.8 230 .4 1.3.7 2.7 1.1 4 48.8 176.9-53.7 360.1-229.9 411.1h-36.1c-45.3 9.9-92.2 9.9-137.5 0h-175.6v-1002.8c.9-106.1-84.4-192.9-190.5-193.9v1397.4h364.5c287.1-4.5 516.2-240.8 511.8-527.9-4.4-280.8-230.9-507.4-511.8-511.8z" fill="#fff"/></svg> </div>
+
+            <!-- Heading -->
+            <h3 class="fw-bold text-white">
+             QuickBooks
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8">
+              
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              <svg height="972" viewBox="0.5 0.5 77.285 28.601000000000003" width="2500" xmlns="http://www.w3.org/2000/svg"><g fill="#00dc06" stroke-width=".265"><path d="M65.879.5C60.084.5 56.3 4.47 56.3 11.03c0 8.15 5.794 10.478 9.948 10.478 3.122 0 6.085-1.27 8.229-3.519l-2.673-2.672c-1.429 1.27-3.069 2.037-5.503 2.037-3.228 0-5.398-1.878-5.398-4.471h14.394C75.27 12.857 77.785.501 65.878.501m-4.974 8.837c0-3.493 2.646-5.16 5.477-5.16 2.831 0 5.398 1.72 5.398 5.16zM12.883 8.994c-1.853-.238-7.17-.027-7.17-2.461 0-1.429 2.248-2.222 4.286-2.222a10.95 10.95 0 0 1 6.085 1.746l2.778-2.752C18.042 2.644 15 .501 10 .501 5.448.5 1.347 2.88 1.347 6.69c0 5.848 7.064 5.848 10 6.14 1.8.184 3.414.29 3.414 2.036 0 1.64-2.487 2.54-4.418 2.54-3.149 0-5.028-1.031-6.88-2.698L.5 17.699c2.566 2.487 6.033 3.836 9.604 3.81 5.292 0 9.129-2.329 9.129-7.012 0-3.096-2.09-4.948-6.35-5.503M28.07.5a12.939 12.939 0 0 0-8.123 2.805l2.778 2.778a8.761 8.761 0 0 1 5.371-1.746c3.519 0 4.577 1.402 4.577 2.99V9.31h-6.27c-2.329 0-6.88.582-6.88 5.689 0 3.757 2.144 6.508 7.277 6.508 2.566 0 4.524-.82 5.873-2.434v2.038h4.551V7.644c0-4.71-2.884-7.143-9.154-7.143m4.63 13.255c0 3.89-2.778 3.678-5.239 3.678s-4.101-.662-4.101-2.408c0-1.614 1.296-2.17 3.995-2.17H32.7zM51.274.924v2.249C49.712 1.4 47.86.5 45.347.5c-4.313 0-6.535 2.407-7.276 5-.291.953-.37 2.778-.37 5.477 0 2.54.026 4.868.899 6.641 1.244 2.487 4.233 3.89 6.747 3.89 2.434 0 4.498-.953 5.927-2.593v1.27c0 1.481-.503 2.46-1.456 3.227-.952.768-2.143 1.244-3.81 1.244-1.508 0-2.937-.82-3.757-1.402l-3.069 3.069c1.984 1.614 4.34 2.699 6.906 2.725 2.46.053 4.868-.74 6.8-2.302 1.825-1.429 2.99-4.154 2.99-7.011V.924zm0 10.054c0 1.561-.027 2.725-.16 3.334-.29 1.296-1.772 3.016-4.47 3.016-.689 0-4.128-.397-4.525-3.387a22.217 22.217 0 0 1-.132-2.963c0-2.328.105-3.07.211-3.651.238-1.164 1.773-2.91 4.445-2.91 3.255 0 4.313 2.222 4.472 3.095.132 1.138.185 2.302.159 3.466"/></g></svg>
+            </div>
+
+            <!-- Heading -->
+            <h3 class="fw-bold text-white">
+              Sage
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-lg-0">
+              
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              <svg width="2500" height="2500" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M128.003 256C198.693 256 256 198.689 256 128 256 57.3 198.699 0 128.003 0S0 57.3 0 128c0 70.689 57.307 128 128.003 128" fill="#1FC0E7"/><path d="M62.367 127.968l21.8-21.902a3.913 3.913 0 0 0-2.782-6.656c-1.052 0-2.036.41-2.776 1.166L56.821 122.38l-21.874-21.845a3.904 3.904 0 0 0-2.76-1.126 3.908 3.908 0 0 0-2.736 6.695l21.8 21.829-21.788 21.845c-.763.762-1.184 1.752-1.184 2.805a3.913 3.913 0 0 0 3.909 3.914c1.04 0 2.02-.399 2.759-1.138l21.845-21.857 21.76 21.771c.774.797 1.764 1.224 2.833 1.224a3.911 3.911 0 0 0 3.903-3.914c0-1.041-.398-2.02-1.138-2.76l-21.788-21.879.005.023zm129.599-.006a7.114 7.114 0 0 0 7.111 7.111c3.903 0 7.088-3.186 7.088-7.11 0-3.926-3.185-7.112-7.094-7.112-3.908 0-7.088 3.186-7.088 7.111h-.017zm-13.454 0c0-11.35 9.216-20.594 20.56-20.594 11.32 0 20.553 9.245 20.553 20.594 0 11.35-9.227 20.594-20.554 20.594-11.338 0-20.56-9.233-20.56-20.594zm-8.09 0c0 15.815 12.857 28.695 28.65 28.695 15.792 0 28.649-12.868 28.649-28.69 0-15.814-12.857-28.694-28.65-28.694-15.798 0-28.649 12.874-28.649 28.695v-.006zm-2.03-28.2h-1.196c-3.612 0-7.094 1.138-10 3.385-.399-1.74-1.969-3.072-3.835-3.072a3.87 3.87 0 0 0-3.868 3.891l.011 48.327c0 2.145 1.764 3.892 3.897 3.892a3.914 3.914 0 0 0 3.908-3.903v-29.719c0-9.898.91-13.903 9.375-14.961.797-.097 1.639-.08 1.65-.08 2.31-.085 3.96-1.684 3.96-3.84a3.923 3.923 0 0 0-3.926-3.914l.023-.006zm-75.015 23.484c0-.114.012-.228.017-.33 2.265-8.988 10.388-15.627 20.054-15.627 9.785 0 17.977 6.792 20.138 15.94H93.372l.005.017zm48.202-.74c-1.684-7.981-6.047-14.54-12.686-18.75-9.716-6.178-22.54-5.837-31.915.853-7.657 5.444-12.077 14.365-12.077 23.552 0 2.304.284 4.63.853 6.924 2.89 11.377 12.664 20.002 24.315 21.43 3.458.42 6.826.227 10.297-.683 3.003-.74 5.899-1.946 8.567-3.664 2.77-1.78 5.086-4.136 7.339-6.952.034-.056.08-.096.125-.153 1.559-1.934 1.268-4.7-.438-6.008-1.445-1.109-3.869-1.558-5.769.888-.41.592-.87 1.195-1.365 1.792-1.519 1.678-3.402 3.3-5.655 4.562a20.63 20.63 0 0 1-9.614 2.43c-11.366-.131-17.442-8.079-19.61-13.745a21.142 21.142 0 0 1-.87-3.3l-.057-.597h40.79c5.586-.125 8.59-4.079 7.759-8.59l.011.011z" fill="#FFF"/></svg>         </div>
+
+            <!-- Heading -->
+            <h3 class="fw-bold text-white">
+             Xero
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-md-0">
+              
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="icon icon-lg mb-4">
+              <svg enable-background="new 0 0 2499.6 2500" viewBox="0 0 2499.6 2500" xmlns="http://www.w3.org/2000/svg"><path d="m1187.9 1187.9h-1187.9v-1187.9h1187.9z" fill="#f1511b"/><path d="m2499.6 1187.9h-1188v-1187.9h1187.9v1187.9z" fill="#80cc28"/><path d="m1187.9 2500h-1187.9v-1187.9h1187.9z" fill="#00adef"/><path d="m2499.6 2500h-1188v-1187.9h1187.9v1187.9z" fill="#fbbc09"/></svg> </div>
+
+            <!-- Heading -->
+            <h3 class="fw-bold text-white">
+             Microsoft Dynamics 
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-md-0">
+            
+            </p>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="icon icon-lg mb-4">
+              
+              <svg height="355" viewBox="12.405 7.085 638.036 79.976" width="2500" xmlns="http://www.w3.org/2000/svg"><path d="m277.997 59.117h40.652l-21.495-34.583-39.451 62.527h-17.955l47.985-75.108c2.087-3.035 5.564-4.868 9.42-4.868 3.73 0 7.208 1.77 9.231 4.741l48.176 75.235h-17.955l-8.472-13.972h-41.158zm186.506 13.972v-65.246h-15.236v71.631c0 1.96.759 3.857 2.213 5.311s3.414 2.276 5.563 2.276h69.482l8.977-13.972zm-252.067-11.696c14.794 0 26.806-11.95 26.806-26.743 0-14.794-12.012-26.807-26.806-26.807h-66.656v79.218h15.23v-65.246h50.414c7.081 0 12.771 5.754 12.771 12.835 0 7.08-5.69 12.834-12.771 12.834l-42.953-.063 45.482 39.64h22.128l-30.6-25.668zm-160.416 25.667c-21.868 0-39.615-17.702-39.615-39.577s17.747-39.64 39.615-39.64h46.045c21.875 0 39.609 17.765 39.609 39.64s-17.733 39.577-39.608 39.577zm45.02-13.972c14.17 0 25.644-11.443 25.644-25.605s-11.474-25.668-25.642-25.668h-44.003c-14.162 0-25.643 11.507-25.643 25.669s11.481 25.605 25.643 25.605zm289.32 13.972c-21.876 0-39.64-17.702-39.64-39.577s17.764-39.64 39.64-39.64h54.687l-8.915 13.971h-44.761c-14.162 0-25.668 11.507-25.668 25.669s11.506 25.605 25.668 25.605h54.94l-8.977 13.972zm186.316-13.972c-11.696 0-21.622-7.84-24.657-18.65h65.12l8.977-13.973h-74.096c3.035-10.748 12.96-18.65 24.657-18.65h44.698l9.041-13.973h-54.75c-21.876 0-39.64 17.766-39.64 39.64 0 21.876 17.764 39.578 39.64 39.578h46.974l8.977-13.972zm61.896-56.836a6.934 6.934 0 0 1 6.954-6.955c3.92 0 7.018 3.098 7.018 6.955 0 3.92-3.098 7.018-7.018 7.018-3.857 0-6.954-3.098-6.954-7.018zm6.954 8.977c4.931 0 8.915-3.983 8.915-8.914s-3.984-8.914-8.915-8.914c-4.868 0-8.85 3.983-8.85 8.914s3.982 8.914 8.85 8.914zm-.822-14.225c1.391 0 1.96.064 2.593.316 1.77.57 1.96 2.15 1.96 2.782 0 .127 0 .443-.127.822-.063.38-.316 1.138-1.201 1.707-.127.063-.19.127-.443.253l2.276 4.11h-2.213l-2.023-3.794h-1.39v3.794h-1.96v-9.99zm.696 4.552c.632-.063 1.264-.063 1.643-.632.19-.253.254-.506.254-.885 0-.506-.317-.948-.76-1.201-.442-.19-.884-.19-1.833-.19h-.568v2.908z" fill="#f80000"/></svg></div>
+
+            <!-- Heading -->
+            <h3 class="fw-bold text-white">
+             Oracle Netsuite
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-md-0">
+              
+            </p>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="icon icon-lg mb-4">
+              <svg width="2500" height="1045" viewBox="0 0 512 214" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M35.982 83.484c0-5.546 4.551-7.68 12.09-7.68 10.808 0 24.461 3.272 35.27 9.103V51.484c-11.804-4.693-23.466-6.542-35.27-6.542C19.2 44.942 0 60.018 0 85.192c0 39.252 54.044 32.995 54.044 49.92 0 6.541-5.688 8.675-13.653 8.675-11.804 0-26.88-4.836-38.827-11.378v33.849c13.227 5.689 26.596 8.106 38.827 8.106 29.582 0 49.92-14.648 49.92-40.106-.142-42.382-54.329-34.845-54.329-50.774zm96.142-66.986l-34.702 7.395-.142 113.92c0 21.05 15.787 36.551 36.836 36.551 11.662 0 20.195-2.133 24.888-4.693V140.8c-4.55 1.849-27.022 8.391-27.022-12.658V77.653h27.022V47.36h-27.022l.142-30.862zm71.112 41.386L200.96 47.36h-30.72v124.444h35.556V87.467c8.39-10.951 22.613-8.96 27.022-7.396V47.36c-4.551-1.707-21.191-4.836-29.582 10.524zm38.257-10.524h35.698v124.444h-35.698V47.36zm0-10.809l35.698-7.68V0l-35.698 7.538V36.55zm109.938 8.391c-13.938 0-22.898 6.542-27.875 11.094l-1.85-8.818h-31.288v165.83l35.555-7.537.143-40.249c5.12 3.698 12.657 8.96 25.173 8.96 25.458 0 48.64-20.48 48.64-65.564-.142-41.245-23.609-63.716-48.498-63.716zm-8.533 97.991c-8.391 0-13.37-2.986-16.782-6.684l-.143-52.765c3.698-4.124 8.818-6.968 16.925-6.968 12.942 0 21.902 14.506 21.902 33.137 0 19.058-8.818 33.28-21.902 33.28zM512 110.08c0-36.409-17.636-65.138-51.342-65.138-33.85 0-54.33 28.73-54.33 64.854 0 42.808 24.179 64.426 58.88 64.426 16.925 0 29.725-3.84 39.396-9.244v-28.445c-9.67 4.836-20.764 7.823-34.844 7.823-13.796 0-26.027-4.836-27.591-21.618h69.547c0-1.85.284-9.245.284-12.658zm-70.258-13.511c0-16.071 9.814-22.756 18.774-22.756 8.675 0 17.92 6.685 17.92 22.756h-36.694z" fill="#6772E5"/></svg>
+            <!-- Heading -->
+            <h3 class="fw-bold text-white pt-4">
+             Stripe
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-md-0">
+              
+            </p>
+
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+           
+            <!-- Heading -->
+            
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA -->
+    <section class=" ">
+      <div class="container py-6 py-md-8 border-top border-bottom border-gray-900-50">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="fw-bold text-black mb-1">
+              Register today. Build tomorrow.
+            </h3>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-5 mb-md-0">
+              
+            </p>
+
+          </div>
+          <div class="col-12 col-md-auto">
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-dark lift">
+              Coming soon
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+    
+            <!-- Brand -->
+             <!-- Brand -->
+        <a class="navbar-brand" href="./startup.html">
+          <h3 class="text-black text-uppercase fs-2 fw-bolder">B o n d</h3>
+        </a>
+    
+            <!-- Text -->
+            <p class="text-white mb-2">
+              Building tomorrow, today.
+            </p>
+    
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="https://www.instagram.com/bondbankhq/" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="https://twitter.com/BondBankHQ" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+             
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-black">
+              Products
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-black mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset text-nowrap">
+                  Business account <span class="text-muted fw-bolder"> beta</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset text-nowrap">
+                  Treasury account <span class="text-muted fw-bolder"> beta</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset text-nowrap">
+                  Corporate credit card  <span class="text-muted fw-bolder"> beta</span>
+                </a>
+              </li>
+            
+    
+          </div>
+         
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/bond.js"></script>
+  </body>
+</html>
